@@ -1,0 +1,24 @@
+<%= form_with scope: :task, local: true do |form| %>
+<body bgcolor ="pink">
+<h1 align="center">TODO LIST </h1>
+            <p>
+
+<h3 align ="center"><%= form.label :NEWTASK%><br>
+
+               <%= form.text_area :newtask %></h3>
+               </p>
+
+<h2 align="center">Incomplete Task</h2>
+<div class ="tasks" id = "incomplete_task">
+</div>
+
+<h2 align ="center">Complete Task</h2>
+<div class ="tasks" id = "complete_task">
+</div>
+
+<p>
+<%= form.submit %>
+
+    </p>
+</body>
+<%end%>
